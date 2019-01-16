@@ -32,6 +32,11 @@
       "code": "EPSG:32632",
       "proj": "+proj=utm +zone=32 +datum=WGS84 +units=m +no_defs",
       "label": "WGS 84 / UTM zone 32N"
+    },
+    {
+      "code": "EPSG:2154",
+      "proj": "+proj=lcc +lat_1=49 +lat_2=44 +lat_0=46.5 +lon_0=3 +x_0=700000 +y_0=6600000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs",
+      "label": "RGF93 / Lambert-93"
     }
   ],
   "plugins": {
@@ -79,16 +84,11 @@
               "menuItems": [
                 {"key": "ThemeSwitcher", "icon": "themes"},
                 {"key": "LayerTree", "icon": "layers", "identifyEnabled": true},
-                {"key": "Share", "icon": "share", "identifyEnabled": true},
                 {"key": "Tools", "icon": "tools", "subitems": [
                   {"key": "IdentifyRegion", "icon": "identify_region"},
                   {"key": "Measure", "icon": "measure"},
-                  {"key": "Redlining", "icon": "draw"},
-                  {"key": "Editing", "icon": "editing", "themeWhitelist": ["QWC2 Test 2056"]},
-                  {"key": "DxfExport", "icon": "dxfexport"},
-                  {"key": "RasterExport", "icon": "rasterexport"}
+                  {"key": "Redlining", "icon": "draw"}
                 ]},
-                {"key": "Print", "icon": "print"},
                 {"key": "Help", "icon": "info", "identifyEnabled": true}
               ],
               "searchOptions": {
@@ -125,17 +125,6 @@
           }
         },
         {
-          "name": "Share",
-          "cfg": {
-            "showSocials": true,
-            "showLink": true,
-            "showQRCode": true
-          }
-        },
-        {
-          "name": "Print"
-        },
-        {
           "name": "Help"
         },
         {
@@ -145,40 +134,16 @@
           "name": "LayerTree",
           "cfg": {
             "showLegendIcons": true,
-            "showRootEntry": true,
+            "showRootEntry": false,
             "showQueryableIcon": true,
             "allowMapTips": true,
-            "allowCompare": true,
+            "allowCompare": false,
             "allowImport": true,
             "groupTogglesSublayers": false,
             "grayUnchecked": false,
             "flattenGroups": false,
             "layerInfoWindowSize": {"width": 480, "height": 400},
             "bboxDependentLegend": false
-          }
-        },
-        {
-          "name": "DxfExport"
-        },
-        {
-          "name": "RasterExport",
-          "cfg": {
-            "dpis": [96, 300]
-          }
-        },
-        {
-          "name": "Redlining"
-        },
-        {
-          "name": "Editing"
-        },
-        {
-          "name": "MapCompare"
-        },
-        {
-          "name": "HeightProfile",
-          "cfg": {
-            "heighProfilePrecision": 0
           }
         },
         {
@@ -254,22 +219,16 @@
               "menuItems": [
                 {"key": "ThemeSwitcher", "icon": "themes"},
                 {"key": "LayerTree", "icon": "layers", "identifyEnabled": true},
-                {"key": "Share", "icon": "share", "identifyEnabled": true},
                 {"key": "Tools", "icon": "tools", "subitems": [
                   {"key": "IdentifyRegion", "icon": "identify_region"},
                   {"key": "Measure", "icon": "measure"},
-                  {"key": "Redlining", "icon": "draw"},
-                  {"key": "Editing", "icon": "editing", "themeWhitelist": ["QWC2 Test 2056"]},
-                  {"key": "DxfExport", "icon": "dxfexport"},
-                  {"key": "RasterExport", "icon": "rasterexport"}
+                  {"key": "Redlining", "icon": "draw"}
                 ]},
-                {"key": "Print", "icon": "print"},
                 {"key": "Help", "icon": "info", "identifyEnabled": true}
               ],
               "toolbarItems": [
                 {"key": "Measure", "mode": "LineString", "icon": "measure_line"},
                 {"key": "Measure", "mode": "Polygon", "icon": "measure_polygon"},
-                {"key": "Print", "icon": "print"},
                 {"key": "IdentifyRegion", "icon": "identify_region"}
               ],
               "searchOptions": {
@@ -303,10 +262,10 @@
           "name": "LayerTree",
           "cfg": {
             "showLegendIcons": true,
-            "showRootEntry": true,
+            "showRootEntry": false,
             "showQueryableIcon": true,
             "allowMapTips": true,
-            "allowCompare": true,
+            "allowCompare": false,
             "allowImport": true,
             "groupTogglesSublayers": true,
             "grayUnchecked": false,
@@ -334,45 +293,13 @@
           "name": "MapTip"
         },
         {
-          "name": "Share",
-          "cfg": {
-            "showSocials": true,
-            "showLink": true,
-            "showQRCode": true
-          }
-        },
-        {
-          "name": "Print"
-        },
-        {
           "name": "Help"
         },
         {
           "name": "MapCopyright"
         },
         {
-          "name": "DxfExport"
-        },
-        {
-          "name": "RasterExport",
-          "cfg": {
-            "dpis": [96, 300]
-          }
-        },
-        {
           "name": "Redlining"
-        },
-        {
-          "name": "Editing"
-        },
-        {
-          "name": "MapCompare"
-        },
-        {
-          "name": "HeightProfile",
-          "cfg": {
-            "heighProfilePrecision": 0
-          }
         },
         {
           "name": "MapInfoTooltip",
